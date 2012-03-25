@@ -21,6 +21,18 @@ else if (!empty($GLOBALS['athletic_team'])) {
     'general'         => array(xl('General')          ,xl('General'),xl('G'),1,0),
   );
 }
+else if (!empty($GLOBALS['mental_health'])) {
+  $ISSUE_TYPES = array(
+    // table type, plural, singular, abbrev, style, force show patient summary screen
+    'medical_problem' => array(xl('Medical Problems'),xl('Problem')   ,xl('P'),0,1),
+    'allergy'         => array(xl('Allergies')       ,xl('Allergy')   ,xl('A'),0,1),
+    'medication'      => array(xl('Medications')     ,xl('Medication'),xl('M'),0,1),
+    'surgery'         => array(xl('Surgeries')       ,xl('Surgery')   ,xl('S'),0,0),
+    'dental'          => array(xl('Dental Issues')   ,xl('Dental')    ,xl('D'),0,0),
+    'mental_health'   => array(xl('Mental Health')   ,xl('MH Problem'),xl('MH'),0,0),
+    'substance_abuse' => array(xl('Substance Abuse') ,xl('SA Problem'),xl('SA'),0,0),
+  );
+}
 else { // default version
   $ISSUE_TYPES = array(
     // table type, plural, singular, abbrev, style, force show patient summary screen
