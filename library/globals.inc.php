@@ -398,6 +398,7 @@ $GLOBALS_METADATA = array(
         '1' => xl('Athletic team'),
         '2' => xl('IPPF'),
         '3' => xl('Weight loss clinic'),
+        '4' => xl('Mental Health Facility'),
       ),
       '0',                              // default
       xl('Indicator for specialized usage')
